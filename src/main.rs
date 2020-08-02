@@ -26,7 +26,7 @@ pub fn main()
     let entry = ash::Entry::new().unwrap();
 
     let extensions = get_extensions(&window);
-    //let extensions = vec![Surface::name(), khr::Win32Surface::name(), ext::DebugUtils::name()];
+    let extensions_device = get_extensions_device();
     let layers = get_layers();
     let (entry, instance, debug_clbk, debug_utils_ld) = new_instance(entry, &extensions, &layers);
 
@@ -37,7 +37,7 @@ pub fn main()
     let device_phys = find_first_physical_device(&instance);
 
     let queue = find_queue(&instance, &device_phys, &surface_ld, &surface);
-    let device = new_device(&instance, &device_phys, &extensions, queue);
+    let device = new_device(&instance, &device_phys, &extensions_device, queue);
 
     unsafe
         {
@@ -102,7 +102,6 @@ fn new_surface<E: EntryV1_0, I: InstanceV1_0>(entry: &E, instance: &I, window: &
 fn new_device(instance: &ash::Instance, device_phys: &vk::PhysicalDevice, extensions: &Vec<&CStr>, queue_index: QueueIndex) -> Device
 {
     let extensions: Vec<*const i8> = extensions.iter().map(|x| x.as_ptr()).collect();
-    //let extensions: Vec<*const i8> = vec![Surface::name().as_ptr(), khr::Win32Surface::name().as_ptr(), ext::DebugUtils::name().as_ptr()];
 
     unsafe
         {
@@ -159,7 +158,13 @@ fn get_extensions(window: &Window) -> Vec<&CStr>
 {
     let mut extensions = ash_window::enumerate_required_extensions(window).unwrap();
     extensions.push(ext::DebugUtils::name());
+
     extensions
+}
+
+fn get_extensions_device() -> Vec<&'static CStr>
+{
+    vec![khr::Swapchain::name()]
 }
 
 fn get_layers() -> Vec<CString>

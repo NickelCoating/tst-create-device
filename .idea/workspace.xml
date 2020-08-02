@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
@@ -12,10 +27,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ae16a6-802c-48a7-a4fd-cfb5be1db50b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/create-device.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f0ae16a6-802c-48a7-a4fd-cfb5be1db50b" name="Default Changelist" comment="Initial.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +72,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo Command.run" />
@@ -71,6 +80,7 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,8 +90,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596216297353</updated>
-      <workItem from="1596216298629" duration="1576000" />
+      <workItem from="1596216298629" duration="3195000" />
+      <workItem from="1596279442185" duration="3017000" />
+      <workItem from="1596374455623" duration="38000" />
+      <workItem from="1596374652159" duration="10000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial.">
+      <created>1596218085854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596218085854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,32 +110,53 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1662" height="282" key="GridCell.Tab.0.bottom" timestamp="1596218066735">
+    <state width="654" height="912" key="GridCell.Tab.0.bottom" timestamp="1596374493335">
+      <screen x="720" y="1440" width="1920" height="1040" />
+    </state>
+    <state width="1161" height="1312" key="GridCell.Tab.0.bottom/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596284186535" />
+    <state width="654" height="912" key="GridCell.Tab.0.bottom/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596374493335" />
+    <state width="654" height="912" key="GridCell.Tab.0.center" timestamp="1596374493335">
+      <screen x="720" y="1440" width="1920" height="1040" />
+    </state>
+    <state width="1161" height="1312" key="GridCell.Tab.0.center/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596284186535" />
+    <state width="654" height="912" key="GridCell.Tab.0.center/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596374493335" />
+    <state width="654" height="912" key="GridCell.Tab.0.left" timestamp="1596374493335">
+      <screen x="720" y="1440" width="1920" height="1040" />
+    </state>
+    <state width="1161" height="1312" key="GridCell.Tab.0.left/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596284186535" />
+    <state width="654" height="912" key="GridCell.Tab.0.left/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596374493335" />
+    <state width="654" height="912" key="GridCell.Tab.0.right" timestamp="1596374493335">
+      <screen x="720" y="1440" width="1920" height="1040" />
+    </state>
+    <state width="1161" height="1312" key="GridCell.Tab.0.right/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596284186535" />
+    <state width="654" height="912" key="GridCell.Tab.0.right/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596374493335" />
+    <state x="1348" y="452" key="Vcs.Push.Dialog.v2" timestamp="1596218130905">
       <screen x="72" y="0" width="3368" height="1440" />
     </state>
-    <state width="1662" height="282" key="GridCell.Tab.0.bottom/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596218066735" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596216978203" />
-    <state width="1662" height="282" key="GridCell.Tab.0.center" timestamp="1596218066735">
-      <screen x="72" y="0" width="3368" height="1440" />
-    </state>
-    <state width="1662" height="282" key="GridCell.Tab.0.center/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596218066735" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596216978203" />
-    <state width="1662" height="282" key="GridCell.Tab.0.left" timestamp="1596218066735">
-      <screen x="72" y="0" width="3368" height="1440" />
-    </state>
-    <state width="1662" height="282" key="GridCell.Tab.0.left/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596218066735" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596216978203" />
-    <state width="1662" height="282" key="GridCell.Tab.0.right" timestamp="1596218066735">
-      <screen x="72" y="0" width="3368" height="1440" />
-    </state>
-    <state width="1662" height="282" key="GridCell.Tab.0.right/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596218066735" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/72.0.3368.1440/720.1440.1920.1040@720.1440.1920.1040" timestamp="1596216978203" />
+    <state x="1348" y="452" key="Vcs.Push.Dialog.v2/72.0.3368.1440/720.1440.1920.1040@72.0.3368.1440" timestamp="1596218130905" />
   </component>
 </project>
